@@ -1,0 +1,56 @@
+@import url(base.css);
+
+.excerpt {
+    padding   : 0 20vw 2.5rem;
+    text-align: center;
+}
+
+.posts-container {
+    padding              : 0 10vw 5rem;
+    display              : grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-gap             : 1.5rem;
+}
+
+.post-item a {
+    display         : block;
+    width           : 100%;
+    height          : 100%;
+    padding         : 1.5rem;
+    background-color: var(--trans-dark);
+    color           : var(--medium-dark);
+    border          : none;
+}
+
+.post-item a .triangle-right-large::after {
+    display: none;
+}
+
+.post-item a:hover>*,
+.post-item a:active>* {
+    color: var(--dark);
+}
+.post-item a:hover .triangle-right-large::after,
+.post-item a:active .triangle-right-large::after {
+    display: inline-block;
+}
+
+.post-item-title {
+    color        : var(--gold);
+    margin-bottom: .5rem;
+}
+
+.post-item p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .excerpt, .posts-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .posts-container {
+        grid-template-columns: minmax(250px, 1fr);
+    }
+}

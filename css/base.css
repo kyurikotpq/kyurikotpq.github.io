@@ -1,0 +1,195 @@
+/* Nav */
+@import url(nav.css);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=PT+Sans&display=swap');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark       : #202020;
+    --medium-dark: #aaaaaa;
+    --light      : #cfcfcf;
+    --gold       : #ffd000;
+    --trans-dark : rgba(50, 50, 50, 0.5);
+}
+
+/* Import fonts */
+body {
+    background-color: var(--dark);
+    color           : var(--medium-dark);
+    font-size       : 18px;
+    font-family     : "PT Sans", "Arial", sans-serif;
+    min-height      : 100vh;
+    display         : flex;
+    flex-direction  : column;
+}
+
+/* Links */
+a {
+    color              : var(--gold);
+    text-decoration    : none;
+    border-bottom      : 1.5px solid var(--gold);
+    padding            : 2px;
+    transition         : all .25s ease-in;
+    background         : linear-gradient(to bottom, transparent 0%, transparent 50%, var(--gold) 50%) no-repeat;
+    background-size    : 100% 200%;
+    background-position: 0 1px;
+}
+
+a:hover,
+a:active {
+    color              : var(--dark);
+    transition         : all .25s ease-out;
+    background-position: 0px 100%;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color      : var(--light);
+    font-family: "Merriweather", "Arial", serif;
+}
+
+.entry-title {
+    font-size    : 3.5rem;
+    text-align   : center;
+    color        : var(--light);
+    margin-bottom: 1rem;
+}
+
+.entry-title::after {
+    content         : "";
+    display         : block;
+    width           : 40px;
+    height          : 2px;
+    background-color: var(--light);
+    margin          : 1rem auto 2.5rem;
+}
+
+main>.entry-title {
+    margin-top: 5rem;
+}
+
+
+article > h1 {
+    font-size: 2rem;
+    margin: 3rem 0 .5rem;
+    color: var(--gold);
+}
+
+article > h1::before {
+    content         : "";
+    display         : block;
+    width           : 40px;
+    height          : 2px;
+    background-color: var(--gold);
+    margin          : 0 auto 1rem 0;
+}
+
+article > h2, article > h3 {
+    margin: 2rem 0 .5rem;
+}
+
+.highlight {
+    color: var(--gold);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+strong {
+    color: var(--light);
+}
+
+blockquote {
+    padding         : 1.5rem;
+    background-color: var(--trans-dark);
+    border-left     : 5px solid var(--gold);
+    font-size       : larger;
+    margin-bottom   : 1rem;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+.date {
+    font-weight   : bold;
+    text-transform: uppercase;
+    font-size     : small;
+    display      : block;
+    margin-bottom: 1rem;
+    color        : var(--light);
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left : 2rem;
+    margin: .5rem 0 1.5rem;
+}
+
+/* Divider */
+hr {
+    margin: 1.5rem auto;
+    height: 2px;
+    width: 40px;
+    border: none;
+    background-color: var(--light);
+}
+
+/* Triangle */
+.triangle-right-large::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .5em;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: none;
+    border-left: 10px solid var(--dark);
+}
+
+/* Two col */
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.two-col .col:first-child {
+    padding-right: 2rem;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    padding   : 0 1rem 1rem;
+    text-align: center;
+}
+
+footer small {
+    color         : var(--medium-dark);
+    font-weight   : bold;
+    display       : inline-block;
+    text-transform: uppercase;
+}
+
+footer small::before {
+    content         : "";
+    display         : block;
+    width           : 40px;
+    height          : 2px;
+    background-color: var(--medium-dark);
+    margin          : 0 auto 1rem;
+}

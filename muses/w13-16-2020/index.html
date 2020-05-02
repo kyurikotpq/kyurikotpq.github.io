@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blurry Chaos - Tea Pei Qi</title>
+    <link rel="stylesheet" type="text/css" href="/css/single.css">
+
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="nav-branding"><a class="nav-link" href="/">Tea Pei Qi</a></h1>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                
+                            <li><a class="nav-link" href="/about">About</a></li>
+                    
+                            <li><a class="nav-link" href="/projects">Projects</a></li>
+                    
+                            <li><a class="nav-link" href="/code">Code</a></li>
+                    
+                            <li><a class="nav-link active" href="/muses">Muses</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+<h1 class="entry-title">Blurry Chaos</h1>
+<section class="post-container">
+    <article class="post">
+        <p>I don't usually write my reflections with headers, but this is a catch-up on 1 month's worth of posts, so I'll be using them here for clarity and structure.</p>
+<h1>Table of Contents</h1>
+<ul>
+<li>Singapore's COVID-19 situation</li>
+<li>Vestige Contact Tracker</li>
+<li>Wrapping up my time at NYP</li>
+<li>Starting work at IBM</li>
+<li>感谢最最 _/|\_</li>
+</ul>
+<h1>Singapore's COVID-19 situation</h1>
+<p>I was re-reading my posts from a month ago about how I felt about COVID-19, and I feel ashamed. It was precisely <em>my</em> mentality - the &quot;this will be over soon like SARS&quot;, brushing-off mindset - that contributed to our exponential increase in cases.</p>
+<p>As of March 14, the pandemic was &quot;still okay&quot;. The Singapore Government's advice was to <strong>not</strong> wear a mask unless you're feeling unwell. This was made on the basis of World Health Organization's stance that there has been unconclusive evidence of asymptomatic transimission.</p>
+<h2>Social Distancing</h2>
+<p>In the next week, cases - both infections and deaths - shot up around the world. Malaysia began its Movement Control Order where citizens had to stay home and closed the Causeway link to Singapore - essentially a lockdown. Our Government introduced social-distancing measures where we had to keep 1 metre apart from other people when queuing for food and services; we couldn't sit directly opposite another patron in food centres and restaurants; schools tried out one day of home-based learning, nation-wide.</p>
+<p>It became apparent that our social-distancing measures were not enough to contain the virus over the course of the week. Our cases continued to rise and many Singapore residents started returning from abroad, ineviatably bringing the virus along with them. With these imported cases, our cases surged past 1000 in the span of a few days.</p>
+<h2>Circuit Breaker (CB/CCB/超级白 to some)</h2>
+<p>At the beginning of April, countries around the world started reporting that they had numerous cases of asymptomatic transmission. Acting on this information, our Government introduced the Circuit Breaker: A not-lockdown starting on April 7. Schools must switch to home-based learning and close their physical grounds; people working in businesses providing <em>non-essential services</em> <strong>must</strong> work from home and only step out of their homes to buy essential goods; dining-in at food centres and restaurants is no longer allowed; wearing masks, even if one is feeling well, was &quot;no longer discouraged&quot;.</p>
+<p><strong>Graduation ceremonies for polytechnic and university students are <em>cancelled</em>.</strong></p>
+<p>I am sad, but I know that it is the right thing to do. It is also a necessary if I want this pandemic to end as soon as possible so that our healthcare system won't be overwhelmed. So, unlike a few weeks ago, I'm at peace with this situation - and I'm more grateful than ever to Nanyang Polytechnic for gifting me with <a href="https://www.linkedin.com/posts/kyurikotpq_nanyang-polytechnic-may-not-have-been-able-activity-6652939940311207937-_Nup">wonderful memories to graduate with</a>.</p>
+<h2>Fines for not wearing a mask</h2>
+<p>However, our daily number of new local-transmission cases continued to increase. A few days after the Circuit Breaker started, our Government enforced $300 fines for those who do not wear masks when outdoors.</p>
+<h1>Vestige Contact Tracker</h1>
+<p>In my last post, I had finished the presentation for the Lee Hsien Loong Smart Nation Competition (LHL SNC). Our supervisor Mr Michael informed us that our contact tracing system, Vestige Contact Tracker, was <em>not</em> selected for the next round, most likely because GovTech beat us to it with TraceTogether app (it was released to the public one day before the presentation results).</p>
+<p>Vestige Contact Tracker consists of an Android app and a web interface to generate the contact tracing tree. It was actually completed by Mr Michael back in 2003 for hospital-based contact tracing, and Mr Michael had  Poh Heng and I had picked it up under his suggestion for LHL SNC.</p>
+<p>Our first week was spent exploring non-Bluetooth based data transfer solutions. While, we managed to get data transferred at ultrasonic frequencies, it wasn't a viable solution as things failed once the phone speaker was covered (the phone was placed in the bag or pocket, for instance).</p>
+<p>Poh Heng then built upon what Mr Michael had done over the next 2 weeks so that the app would not be limited to hospitals and can be used for nation-wide contact tracing. Since Poh Heng was better at Android proramming and I at web development, we split the work that way. I had my own struggles with the recursive SQL queries and D3 network graphs and wasn't of much help to him except when it came to code cleanups and troubleshooting.</p>
+<p>Considering how GovTech most likely had a mid-sized team working on TraceTogether, and taking into account Poh Heng and I's situation - the short span of time to work on the app; 1.5 persons working on the app - I am at peace with the LHL SNC result. After all, with the credibility and authority that GovTech has, the app will be more widely adopted by the public, making it more useful compared to if NYP were to release it.</p>
+<p>However, like us, TraceTogether has been unable to make it past &quot;the Chinese phones&quot;. Users of Huawei, Xiaomi, Oppo and other Chinese phone manufacturers with custom Android OSes can <em>force close</em> TraceTogether if they swipe it away in the Recents apps list. To keep the app running in the background forever (like WhatsApp), the app has to be whitelisted by the Chinese manufacturer. I'm not sure what the future of TraceTogether will be, but I sincerely hope that the app will aid in our containment efforts.</p>
+<h1>Wrapping up my time at NYP</h1>
+<h2>sshftp is done!</h2>
+<p>In my last post, I started exploring Docker options for the Linux server. Within 1.5 weeks, I managed to build upon an existing LAMP image wonderfully built by @glats on GitHub and got the SSH terminal working the way I wanted it. Together with chroot-ed FTP, my server is finished! :D</p>
+<p>Hopefully, this server will aid future batches of competitors in getting comfortable with remote deployment in their workflow. I'll post the write-up - backstory, motivations and all - soon, once I get this site up proper :)</p>
+<h2>Automated Tests writing are not done...</h2>
+<p>I was tasked to write automated tests for my coaches before March 31st, but haven't gotten around to it as of today <strong>*sweats*</strong>. I'll finish this week - I promise! So sorry <em>laoshis</em> (if you ever read this) &gt;_&lt;|||</p>
+<h1>Starting work at IBM</h1>
+<p>IBM staff had already been working from home before the Circuit Breaker, so I had collect my laptop from the Changi Business Park office before I start my apprenticeship on April 1st. My laptop turned out to be a Lenovo Thinkpad machine that weighed about 1.5kg - not too heavy, thankfully. The 32GB of RAM will definitely be useful when I open multiple Chrome tabs to do my research.</p>
+<p>April 1st was a Wednesday. It was awkward joining mid-week, and even more awkward having a virtual onboarding - there was too many people to look at and say hi to at once. Thankfully, my manager Sindujaa was there to help. She briefly outlined what is Quote to Cash, the structure of IBM's Q2C operations, and how the technical development team (#TechDevs!) supports the IBM's Q2C operations.</p>
+<h2>Stand Up!</h2>
+<p>The Tech Dev team mainly focuses on crafting Robotic Process Automation (RPA) solutions to increase the efficiency of IBM's  Q2C operations. However, there are opportunities to work with blockchain and other technologies as well. The Singapore team collaborates with IBM teams around the world - mainly India and Manila - on certain projects too.</p>
+<p>To keep track of everyone's progress, the Tech Devs have daily stand-up meetings. The team is split into multiple, smaller squads so that the meetings for each pair of squads would only last 15mins.</p>
+<p>I felt lost during my first stand-up meeting (I wanted to meet everyone, so I attended the meetings of other squads too). I was slightly intimidated as well because I had never heard of the technologies used by the projects my new colleagues were working on.</p>
+<p>Thankfully, I was assigned to complete my BluePrism training for my first week. Which brought me to the next question: What is BluePrism?</p>
+<h2>Working with Robots</h2>
+<p>When I first thought of RPA's robots, I thought of the physical, hardware robots that you see in sci-fi movies and Japanese tech shows. Upon further Googling, I found that RPA's robots were <em>software</em> robots, and you can run them on a periodic/scheduled basis - much like Bash scripts + <code>cron</code>.</p>
+<p>UiPath and BluePrism are two of the low-code development tools in the market for crafting RPA solutions; IBM uses BluePrism. And boy, there was a lot to learn! I managed to finish the training one day before my deadline and learnt a lot about the best practices - environment variables, credential manager, etc. - during the review exercise with my mentor, Ruwan.</p>
+<p>With my training done, I was tasked to work on my first RPA tasks, which overwhelmed me during the first day but became manageable after a good night's rest. I owe a lot to my managers and colleagues for helping me along and providing me with BluePrism projects that they've already coded. Thank you, lifesavers &lt;3</p>
+<h1>感谢最最 _/|\_</h1>
+<blockquote>
+<p>感谢最最 (<em>gamxia zwei zwei</em>): <em>thank you so much</em> in Teochew</p>
+</blockquote>
+<p>While my first week went smoothly in the tech side, the non-tech side was messy. The next round of Distinguished Award interviews was scheduled to happen on April 8th; my interview time was 11am, so I applied for half-day leave on that day. However, with the Government's announcement of the Circuit Breaker, NYP had to close on April 8th, so the interview was rescheduled to April 7th.</p>
+<p>I became panicky after receiving this news from the Registrar department's call on Friday. <em>Will my leave be approved in time? Applying for leave in the first week already leaves a bad impression... my name is Doom.</em></p>
+<p>Gratefully, my managers were supportive of my rescheduled leave, so I stepped into NYP on the morning of April 7th with less worry. NYP's Principal-CEO, Ms Jeanne Liew, led the interview, and the interview went by in a flash. Things turned out to be very friendly and informal and I enjoyed myself.</p>
+<p>When I was left the room, however, my nerves took over: I wanted to make coffee, but emptied a packet of coffee creamer into my cup instead. It took me 30 seconds after I'd poured hot water into the cup to realise what I'd done. <strong>#WhyIsMyCoffeeSoWhite?</strong></p>
+<blockquote>
+<p>The very next day, my lecturers congratulated me over WhatsApp - I'd won the Lee Kuan Yew Distinguished Award! :')))</p>
+</blockquote>
+<p>Thank you, my lecturers and coaches in NYP, for having faith in me throughout the past three years. Thank you to my managers at IBM - Sindujaa, Valli and Susan - for allowing me to attend the interview as well.</p>
+<p><em>I am indebted to all of you, and I'll make it my life's work to pay it forward and make a positive difference to the lives of others, just as you did with mine.</em></p>
+
+    </article>
+</section>
+    </main>
+    <footer>
+        <small>CONNECT WITH ME</small>
+        <p class="social">I'm @kyurikotpq on 
+            <a href="https://linkedin.com/in/kyurikotpq">LinkedIn</a> / 
+            <a href="https://instagram.com/kyurikotpq">Instagram</a> /
+            <a href="https://github.com/kyurikotpq">GitHub</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

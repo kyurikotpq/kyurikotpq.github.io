@@ -1,0 +1,13 @@
+/* Levels */
+.level-1 {
+    color: var(--light);
+}
+
+.level-2 {
+    color: #b5fdc3;
+}
+
+.level-3 {
+    color: #05ff37;
+    font-weight: bold;
+}
