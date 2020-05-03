@@ -1,13 +1,1 @@
 @import url(base.css);
-
-.big-padding-container {
-    padding: 0 15vw 5rem;
-}
-
-
-@media screen and (max-width: 768px) {
-    .big-padding-container {
-        padding-left : 1rem;
-        padding-right: 1rem;
-    }
-}

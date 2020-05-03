@@ -6,7 +6,6 @@
 }
 
 .posts-container {
-    padding              : 0 10vw 5rem;
     display              : grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-gap             : 1.5rem;

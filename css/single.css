@@ -1,15 +1,13 @@
 @import url(base.css);
 
-.post-container {
-    padding: 0 20vw 5rem;
+.entry-title::after {
+    margin-bottom: 0;
 }
 
 .date {
     text-align: center;
 }
-.entry-title::after {
-    margin-bottom: 0;
-}
+
 .date::after {
     content         : "";
     display         : block;
@@ -17,11 +15,4 @@
     height          : 2px;
     background-color: var(--light);
     margin          : 1rem auto 2.5rem;
-}
-
-@media screen and (max-width: 420px) {
-    .post-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 }
