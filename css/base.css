@@ -10,7 +10,7 @@
 
 :root {
     --dark       : #202020;
-    --medium-dark: #aaaaaa;
+    --medium-dark: #afafaf;
     --light      : #cfcfcf;
     --gold       : #ffd000;
     --trans-dark : rgba(50, 50, 50, 0.5);
@@ -62,6 +62,8 @@ h6 {
     text-align   : center;
     color        : var(--light);
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .entry-title::after {
@@ -99,7 +101,7 @@ article>h3 {
 }
 
 .highlight {
-    color: var(--gold);
+    color: var(--gold) !important;
 }
 
 p {
@@ -211,8 +213,17 @@ footer small::before {
     max-width     : 100%;
 }
 
+/* Basic code styling */
+code {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: var(--trans-dark);
+}
 
 @media screen and (max-width: 420px) {
+    .entry-title {
+        font-size: 2.75rem;
+    }
 
     .big-padding-container,
     .posts-container,
@@ -223,6 +234,9 @@ footer small::before {
 }
 
 @media screen and (min-width: 420px) and (max-width: 768px) {
+    .entry-title {
+        font-size: 3rem;
+    }
 
     .big-padding-container,
     .posts-container,

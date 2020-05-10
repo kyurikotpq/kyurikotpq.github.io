@@ -11,6 +11,11 @@
     grid-gap             : 1.5rem;
 }
 
+.post-item {
+    position: relative;
+    overflow: hidden;
+}
+
 .post-item a {
     display         : block;
     width           : 100%;
@@ -41,6 +46,24 @@
 
 .post-item p {
     margin-bottom: 0;
+}
+
+/* More for project pages */
+.post-item-thumbnail {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+.post-item-thumbnail + a {
+    position: absolute;
+    bottom: -100%;
+    transition: bottom .25s;
+    background-color: var(--gold);
+    color: var(--dark);
+}
+.post-item:hover .post-item-thumbnail + a {
+    bottom: 0;
+    transition: bottom .25s;
 }
 
 @media screen and (max-width: 768px) {

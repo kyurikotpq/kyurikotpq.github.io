@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>安怎安呢款对待我? - Tea Pei Qi</title>
+    <link rel="stylesheet" type="text/css" href="/css/single.css">
+
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="nav-branding"><a class="nav-link" href="/">Tea Pei Qi</a></h1>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                
+                            <li><a class="nav-link" href="/about">About</a></li>
+                    
+                            <li><a class="nav-link" href="/projects">Projects</a></li>
+                    
+                            <li><a class="nav-link" href="/code">Code</a></li>
+                    
+                            <li><a class="nav-link active" href="/muses">Muses</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+<h1 class="entry-title">安怎安呢款对待我?</h1>
+
+    <small class="date">Published on Sat May 09 2020</small>
+
+<section class="post-container">
+    
+    <article class="post">
+        <p>I thought last week was the last I'd see of the software robot (RPA) I had problems with.</p>
+<p>I thought wrong.</p>
+<p>At first, I thought that the Internet connection was unstable, causing the robot to die prematurely. However, after accounting for that scenario in a release on Wednesday, the error messages for disrupted Internet connections never came... <em>and</em> the robot still died prematurely.</p>
+<p>Why?? Why do you do this to me?? 安怎安呢款对待我??</p>
+<p>After 5 minutes, however, I snapped out of it, finally conceding that RPA deployment was less straightforward than web app deployment and I should stop saying &quot;IT <em>SHOULD</em> WORK RIGHT?!&quot;. Successful RPA deployment requires taking care of many nuances... especially on the server side. But I had very little idea of what was happening on the server since my colleague, not me, was the one taking care of the deployment.</p>
+<p>After some thought and with the help of my colleague, I was convinced that it wasn't the Internet connection, but rather the loading of the website I was spying on - the website loads <em>much</em> slower than the robot had anticipated. So I added Wait Stages to account for it.</p>
+<p>Originally, I had placed a static Wait Stage (a mere timeout) for the object action. That's what I was taught in Blue Prism Foundation Training after all. However, my more-experienced colleagues informed me that I have to put conditions - in this case, an <code>&lt;element&gt; check exists</code> - inside the Wait Stage for it to be effective.</p>
+<p>With my fingers crossed, I released this version of the RPA on Friday morning. Before I knocked off, it was still running (it's supposed to run 24/7 for a few days) and had managed to recover by itself upon several failures. Hopefully, I will be able to hand over the RPA on Monday.</p>
+<h1>I'm lactose intolerant?</h1>
+<p>Pertaining to my episodes of diarrhoea last week, I've observed that I have more severe episodes when I consume milk-based foods. I've been drinking milk since young and this has never happened to me before 2018, so I'm not sure what happened to my body. But I'll start monitoring my diet and episodes closely to see if there's a &quot;tipping point&quot; of sorts, i.e. how much milk I can drink without triggering severe episodes.</p>
+<h1>Other happenings this week</h1>
+<p>I sorted through some of my notes from polytechnic, only keeping the ones that I need. There's a lot more to clear (oops) but it's a start!</p>
+<p>I also finished lectures for Week 3 of CS50 2020. I did CS50 last year, but stopped at Week 2 because my school projects flooded in. I'll continue to work on Week 3's shorts and problems over the upcoming week.</p>
+<p>Russell Brunson recorded his future course on Email Marketing, <em>List Building Secrets</em>, across 3 days. He streamed each day of it <em>for free</em> on his social media platforms, starting at 12 midnight Singapore Time. For the first day, I stayed up till 3am to finish it, but developed a bad headache the next morning and regretted it. Thankfully, the stream's recording was put up for 24 hours, so I was able to watch Day 2 &amp; 3 during my lunch breaks.</p>
+<p>My biggest takeaway? Provide a ton of value, and do it sincerely - Russell provided so much value throughout this 3-day event that he increased his <strong>Know, Like and Trust factor</strong> in my mind.</p>
+<h1>A lookahead for Week 20</h1>
+<p>As mentioned earlier, I <s>will aim to</s> <em>must</em> finish the rest of CS50's Week 3 this week.</p>
+<p>I'm also taking on another RPA project on Monday. I pray that it goes well.</p>
+<p>I'm looking forward to <em>Be Extraordinary for Teens</em>, a new course by Mindvalley that starts on Monday!</p>
+<p>For my Toastmasters speech on 13th June, I'm researching and presenting on personal identity/self-identity. The &quot;identity&quot; I had in mind was the kind mentioned in pyschology books, but I never knew there was a philosophical side to it too... maybe it's time to change my major.</p>
+<h2>Bonus Tasks</h2>
+<p>If I can, I will finish the remaining case studies for my portfolio too.</p>
+<h1>This week, I pray that...</h1>
+<p>COVID-19 situations around the world continue to improve - less infections, <em>no re-infections</em> and more recoveries.</p>
+
+    </article>
+</section>
+    </main>
+    <footer>
+        <small>CONNECT WITH ME</small>
+        <p class="social">I'm @kyurikotpq on 
+            <a href="https://linkedin.com/in/kyurikotpq">LinkedIn</a> / 
+            <a href="https://instagram.com/kyurikotpq">Instagram</a> /
+            <a href="https://github.com/kyurikotpq">GitHub</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

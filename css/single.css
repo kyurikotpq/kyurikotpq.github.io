@@ -16,3 +16,7 @@
     background-color: var(--light);
     margin          : 1rem auto 2.5rem;
 }
+
+.post-thumbnail, .post img {
+    width: 100%;
+}
